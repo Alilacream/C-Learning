@@ -9,12 +9,19 @@ typedef struct Note {
   double svt;
   // haaa l interfaces
 } Note;
-typedef struct Etudiant {
+// haaa 7na wselna l class
+// object -> variable de class.
+class Etudiant {
+  // on peut pas accéder à c'est données en Main.
+private:
   int id;
   string name;
   Note note;
   // hahia fonction sahla mahla
+  // les fonction rahom public, accessible en Main.
+public:
   double moyenne(void) { return (note.math + note.pc + note.svt) / 3; };
+
   void relvee_note(void) {
     cout << "Math: ->" << note.math << endl;
     cout << "PC: ->" << note.pc << endl;
@@ -28,8 +35,7 @@ typedef struct Etudiant {
     cin >> note.pc;
     cin >> note.svt;
   }
-
-} Etudiant;
+};
 int main(int argc, char *argv[]) {
   Etudiant ali;
   display("Dkhel no9atek");
