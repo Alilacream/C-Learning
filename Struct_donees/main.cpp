@@ -20,22 +20,12 @@ private:
   // hahia fonction sahla mahla
   // les fonction rahom public, accessible en Main.
 public:
-  double moyenne(void) { return (note.math + note.pc + note.svt) / 3; };
+  double moyenne(void);
 
-  void relvee_note(void) {
-    cout << "Math: ->" << note.math << endl;
-    cout << "PC: ->" << note.pc << endl;
-    cout << "SVT: ->" << note.svt << endl;
-    cout << "moyenne general: ->" << moyenne();
-  }
-  void initliaser(void) {
-    cin >> id;
-    cin >> name;
-    cin >> note.math;
-    cin >> note.pc;
-    cin >> note.svt;
-  }
+  void relvee_note(void);
+  void initliaser(void);
 };
+// main use case
 int main(int argc, char *argv[]) {
   Etudiant ali;
   display("Dkhel no9atek");
@@ -47,4 +37,20 @@ int main(int argc, char *argv[]) {
   ali.relvee_note();
 
   return 0;
+}
+
+// you can define functions utility here by using Class call
+void Etudiant::initliaser() {
+  cin >> id;
+  cin >> name;
+  cin >> note.math;
+  cin >> note.pc;
+  cin >> note.svt;
+}
+double Etudiant::moyenne() { return (note.math + note.pc + note.svt) / 3; }
+void Etudiant::relvee_note() {
+  cout << "Math: ->" << note.math << endl;
+  cout << "PC: ->" << note.pc << endl;
+  cout << "SVT: ->" << note.svt << endl;
+  cout << "moyenne general: ->" << moyenne();
 }
