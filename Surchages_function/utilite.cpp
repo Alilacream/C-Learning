@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
   if (profit >= 50) {
     display("khdemna mliih");
   } else {
-    display("ma khdmnash mlih a khmadi");
+    display("ma khdmnash mlih a hmadi");
   }
   return 0;
 }
