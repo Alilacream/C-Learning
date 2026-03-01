@@ -1,3 +1,4 @@
+#include <array>
 #include <iostream>
 
 #define display(x) cout << x << endl;
@@ -17,6 +18,8 @@ public:
   float moy_row(float **Matrix);
   float moy_col(float **Matrix);
   float moy_matrix(float **Matrix);
+  array<int, 10> remplitA();
+  void impA(array<int, 10> tab);
 };
 
 void Solution::execute() {
@@ -60,4 +63,15 @@ void Solution::execute() {
   // === EXERCICE 5 ===
   float **M = make_matrix(3, 3);
   display_matrix(M);
+  // === EXERCICE 6 ===
+  int number;
+  want(number);
+  int &ref = number;
+  int *pt = &number;
+  display("Number: " << number);
+  display("Address: " << &number);
+  display("Refrence: " << ref);
+  display("Pointer: " << *pt);
+  // === EXERCICE 7 ===
+  int A[10];
 }

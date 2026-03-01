@@ -1,10 +1,11 @@
 #include "class.cpp"
+#include <algorithm>
+#include <array>
 #include <cstdlib>
 #include <iostream>
 #define display(x) cout << x << endl;
 #define want(x) cin >> x;
 using namespace std;
-
 void Solution::Menu() {
   display("\n--- Menu ---");
   display("1. Ajouter 1\n2. Multiplier par 2\n3. Soustraire 4\n4. Quitter");
@@ -97,4 +98,18 @@ float Solution::moy_matrix(float **Matrix) {
     }
   }
   return sum / (len_row + len_col);
+}
+
+array<int, 10> Solution::remplitA() {
+  array<int, 10> tab;
+  for (int i = 0; i < 10; i++) {
+    want(tab[i]);
+  }
+  return tab;
+}
+
+void Solution::impA(array<int, 10> tab) {
+  for (int i = 0; i < 10; i++) {
+    display(tab[i] << "\t" << "<->" << "\t");
+  }
 }
