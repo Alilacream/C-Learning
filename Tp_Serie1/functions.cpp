@@ -1,7 +1,5 @@
 #include "class.cpp"
-#include <algorithm>
 #include <array>
-#include <cstdlib>
 #include <iostream>
 #define display(x) cout << x << endl;
 #define want(x) cin >> x;
