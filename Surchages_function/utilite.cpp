@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-#define display(x) cout << x << endl;
+#define display(x) std::cout << x << std::endl;
 // had chi fekrni b interface use li kayna f golang.
 void ali() { display("hahowa ali"); }
 void ali(int variable) { display(variable); }

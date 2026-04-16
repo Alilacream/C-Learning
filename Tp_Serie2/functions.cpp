@@ -1,31 +1,32 @@
 #include "class.cpp"
 #include <iostream>
-using namespace std;
 /*  === EXERCICE 1 ===   */
 essai *Solution::raz(essai *number) {
   int choice;
-  cout << "choisit votre type de libérage" << endl;
-  cout << "1.Par address" << endl;
-  cout << "2.Par reférence" << endl;
-  cout << "votre choix[1/0]: ";
-  cin >> choice;
+  std::cout << "choisit votre type de libérage" << std::endl;
+  std::cout << "1.Par address" << std::endl;
+  std::cout << "2.Par reférence" << std::endl;
+  std::cout << "votre choix[1/0]: ";
+  std::cin >> choice;
   // par reference
   essai &ref = *number;
   // par pointeur/address
   essai *pt = number;
   // test case
   switch (choice) {
-  case 0:
+  case 0: {
     ref.n = 0;
     ref.x = 0;
     break;
-
-  case 1:
+  }
+  case 1: {
     pt->n = 0;
     pt->x = 0;
     break;
+  }
+
   default:
-    cout << "not known";
+    std::cout << "not known";
     break;
   }
 
@@ -36,17 +37,28 @@ void Solution::test() {
 
   // initialiser les champs <x, n>
   essai *test = new essai;
-  cout << "initialiser le champs n";
-  cin >> test->n;
-  cout << "initialiser le champs x";
-  cin >> test->x;
+  std::cout << "initialiser le champs n";
+  std::cin >> test->n;
+  std::cout << "initialiser le champs x";
+  std::cin >> test->x;
   // appelée la fonction raz.
   essai *resultat = raz(test);
-  cout << "les deux champ <x, n>" << resultat;
+
+  std::cout << "les deux champ <x, n>" << resultat->x << resultat->n
+            << std::endl;
 }
 
+/* === EXERCICE 1 === */
+void Solution::exercice_01() {
+  std::cout << "Bonjour Chére etudiante dans la série 2 du Tp C++ commençant"
+            << std::endl;
+  // timer sleep of 3 seconds
+  Solution::test();
+}
 /*  === EXERCICE 2/ EXERCICE 3 ===  */
-void exercice_3() {
+void Solution::exercice_03() {
+  std::cout << "Continuant a l'exercice 2 et 3 qui on le meme principe."
+            << std::endl;
   Rectangle format(5.0, 3.0);
   format.surface();
   format.affichier();

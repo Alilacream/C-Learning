@@ -1,8 +1,8 @@
 #include <array>
 #include <iostream>
 
-#define display(x) cout << x << endl;
-#define want(x) cin >> x;
+#define display(x) std::cout << x << std::endl;
+#define want(x) std::cin >> x;
 using namespace std;
 
 class Solution {
@@ -50,13 +50,13 @@ void Solution::execute() {
 
   // === EXERCICE 3 ===
   int choice, val;
-  cout << "Entrer votre Numéro ici: ";
-  cin >> val;
+  std::cout << "Entrer votre Numéro ici: ";
+  std::cin >> val;
   // infinement jusqu'a l'utilisateur choisi 4.
   do {
     Menu();
-    cout << "Choix: ";
-    cin >> choice;
+    std::cout << "Choix: ";
+    std::cin >> choice;
     Operation(&val, choice);
     display("Current Value: " << val);
   } while (choice != 4);

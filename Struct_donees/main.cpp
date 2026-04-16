@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define display(x) cout << x << endl;
+#define display(x) std::cout << x << std::endl;
 using namespace std;
 
 typedef struct Note {
@@ -41,16 +41,16 @@ int main(int argc, char *argv[]) {
 
 // you can define functions utility here by using Class call
 void Etudiant::initliaser() {
-  cin >> id;
-  cin >> name;
-  cin >> note.math;
-  cin >> note.pc;
-  cin >> note.svt;
+  std::cin >> id;
+  std::cin >> name;
+  std::cin >> note.math;
+  std::cin >> note.pc;
+  std::cin >> note.svt;
 }
 double Etudiant::moyenne() { return (note.math + note.pc + note.svt) / 3; }
 void Etudiant::relvee_note() {
-  cout << "Math: ->" << note.math << endl;
-  cout << "PC: ->" << note.pc << endl;
-  cout << "SVT: ->" << note.svt << endl;
-  cout << "moyenne general: ->" << moyenne();
+  std::cout << "Math: ->" << note.math << std::endl;
+  std::cout << "PC: ->" << note.pc << std::endl;
+  std::cout << "SVT: ->" << note.svt << std::endl;
+  std::cout << "moyenne general: ->" << moyenne();
 }

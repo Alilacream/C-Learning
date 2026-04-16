@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <vector>
-#define display(x) cout << x;
+#define display(x) std::cout << x;
 using namespace std;
 
 int main(int argc, char *argv[]) {

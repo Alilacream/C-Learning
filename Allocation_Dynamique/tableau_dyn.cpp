@@ -9,8 +9,8 @@ using namespace std;
 // (hlekni C);
 int main(int argc, char *argv[]) {
   string hello;
-  cin >> hello;
-  cout << hello;
+  std::cin >> hello;
+  std::cout << hello;
 
   return EXIT_SUCCESS;
 }

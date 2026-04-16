@@ -7,27 +7,27 @@ using namespace std;
 
 void print_table(int *p, int size) {
   for (int *i = p; i < p + size; i = i + 1) {
-    cout << *i << endl;
+    std::cout << *i << std::endl;
   }
 }
 int main(int argc, char *argv[]) {
   int number;
-  cout << "enter value: ";
-  cin >> number;
+  std::cout << "enter value: ";
+  std::cin >> number;
   int *p;
   p = new int(number);
   // makayanch limite f recusive call
-  cout << "value is: " << *p << endl;
+  std::cout << "value is: " << *p << std::endl;
   // sber nsiyiw:
   // trat garbage value je sais pas 3lach
   print_table(p, number);
-  cout << "original adress: " << &number << endl;
+  std::cout << "original adress: " << &number << std::endl;
   delete p;
   if (p == NULL) {
-    cout << "not deleted something went wrong";
+    std::cout << "not deleted something went wrong";
     exit(EXIT_ERROR);
   }
-  cout << "deleted succesfully, Address: " << p;
+  std::cout << "deleted succesfully, Address: " << p;
 
   return EXIT_SUCCESS;
 }

@@ -1,8 +1,8 @@
 #include "class.cpp"
 #include <array>
 #include <iostream>
-#define display(x) cout << x << endl;
-#define want(x) cin >> x;
+#define display(x) std::cout << x << std::endl;
+#define want(x) std::cin >> x;
 using namespace std;
 void Solution::Menu() {
   display("\n--- Menu ---");
