@@ -126,7 +126,7 @@ int main() {
   // Exercice 5:
   Rectangle R1(4, 5), R2(6, 7);
   // Destructeur se fonctionne à la fin de la fonction main.
-  // L'aure de l'appel du destructeur, i'll s'appel à fin di bloc du code.
+  // L'aure de l'appel du destructeur, i'll s'appel à fin de bloc du code.
   // Donc  si on a R1 dans la premier ligne et R2 dans la deuxieme ligne.
   // à la fin, la deuxieme ligne sera le premier à executé et finalement la
   // premier ligne sera la dernier. NOTE: le destructeur s'arrive à la fin
