@@ -26,7 +26,7 @@ essai *raz(essai *number) {
   }
 
   default:
-    std::cout << "not known";
+    std::cout << "unknown";
     break;
   }
 
@@ -44,7 +44,7 @@ void test() {
   // appelée la fonction raz.
   essai *resultat = raz(test);
 
-  std::cout << "les deux champ <x, n>" << resultat->x << resultat->n
+  std::cout << "les deux champ <x, n>" << resultat->x << " et " << resultat->n
             << std::endl;
 }
 
