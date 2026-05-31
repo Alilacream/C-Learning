@@ -15,7 +15,7 @@ if [ ! -f $1 ]; then
 fi
 # building in the output file
 
-output="./output/$trimout"
+output="./output/$trimout.bin"
 # building the file
 g++ "$filename" -o "$output"
 # checking the compilation

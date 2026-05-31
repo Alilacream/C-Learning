@@ -19,5 +19,4 @@ Cette Dossier, c'est comfortable pour touts les gens etudié au niveau 3éme ann
 **merhba b ay wahed bgha y Collaborez b les project ou bien des challenges avancé en C++**
 
 ---
-
-           <div className="flex align-center">Happy Coding and Ramadan Mubarak 🌙.</div>
+<center> Happy Coding </center>
