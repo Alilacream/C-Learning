@@ -1,6 +1,6 @@
 <header style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #333; padding: 20px 0;">
   <img 
-    src="cpp2025-header.png" 
+    src="cpp25.png" 
     alt="PDF Header Section"
     style="max-width: 100%; height: auto; max-height: 200px;"
   />
